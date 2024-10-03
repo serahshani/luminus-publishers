@@ -2,12 +2,11 @@
 
 </script>
 <template>
-  <div>
+  <div class="w-[100%]">
     <TopBar />
     <Header />
     <slot />
     <Footer />
-    
   </div>
 </template>
 <style scoped>

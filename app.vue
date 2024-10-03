@@ -4,7 +4,7 @@
   })
 </script>
 <template>
-  <div>
+  <div class="w-full">
     <NuxtRouteAnnouncer />
     <NuxtLayout />
     <NuxtPage />
