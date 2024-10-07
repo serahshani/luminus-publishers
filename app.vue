@@ -6,7 +6,8 @@
 <template>
   <div class="w-full">
     <NuxtRouteAnnouncer />
-    <NuxtLayout />
-    <NuxtPage />
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>

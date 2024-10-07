@@ -1,39 +1,47 @@
-<script lang="ts" setup>
-import { useMain } from '~/store';
+<script setup>
 
+const menuOpen = ref(false);
 
-const store = useMain();
-
+const toggleMenu = () => {
+  menuOpen.value = !menuOpen.value;
+};
 </script>
 <template>
- <section class="w-[100%] flex flex-row justify-center items-center">
-   <div class="w-full h-[70px] bg-primary">
-    <!-- {{store.navLinks}} -->
-    <!-- <nav class="w-full h-[70px] bg-primary flex flex-row justify-center items-center gap-8">
-      <NuxtLink v-for="link in store.navLinks" :key="link.name" :to="link.href" class="text-white text-lg hover:text-primary-300">
-        {{ link.name }}
-      </NuxtLink>
-    </nav> -->
-    
-    <nav class="w-full h-[70px] bg-primary flex flex-row justify-between items-center md:justify-center gap-8 px-4 md:px-0">
-      <div class="flex flex-row items-center gap-4">
-        <a href="/" class="text-white text-lg hover:text-primary-300">
-          {{ store.brand }}
-        </a>
-      </div>
-      <div class="hidden md:flex flex-row items-center gap-8">
-        <NuxtLink v-for="link in store.navLinks" :key="link.name" :to="link.href" class="text-white text-lg hover:text-primary-300">
-          {{ link.name }}
-        </NuxtLink>
-      </div>
-      <div class="md:hidden flex flex-row items-center gap-2">
-        <button @click="store.isMenuOpen = !store.isMenuOpen" class="text-white text-lg hover:text-primary-300">
-          <Icon name="bi:list" class="w-6 h-6" />
+  <header class="bg-gray-900 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <!-- Logo/Title -->
+      <h1 class="text-2xl font-bold">SIHO TECHNOLOGIES</h1>
+
+      <!-- Mobile Menu Button (Hamburger Icon) -->
+      <button @click="toggleMenu" class="md:hidden focus:outline-none">
+        <Icon name="bi:list" class="w-6 h-6 text-white" />
+      </button>
+
+      <!-- Main Navigation -->
+      <nav class="hidden md:flex space-x-6">
+        <ul class="flex flex-row space-x-4">
+          <li><a href="#about" class="hover:text-yellow-500">About Us</a></li>
+          <li>
+            <a href="#services" class="hover:text-yellow-500">Services</a>
+          </li>
+          <li>
+            <a href="#contact" class="hover:text-yellow-500">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Call to Action Buttons (Visible on large screens) -->
+      <div class="hidden md:flex space-x-4">
+        <button class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded">
+          Request a Call Back
+        </button>
+        <button class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded">
+          Get a Free Quote
         </button>
       </div>
-    </nav>
-   </div>
- </section>
-</template>
+    </div>
 
-<style></style>
+    <!-- Mobile Menu Drawer Component -->
+    <MobileDrawer :open="menuOpen" @close="menuOpen = false" />
+  </header>
+</template>
