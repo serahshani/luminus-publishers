@@ -1,0 +1,11 @@
+services:
+  frontend:
+    container_name: nextunesolutions-frontend
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["node", ".output/server/index.mjs"]
+    environment:
+      API_BASE_URL: $API_BASE_URL
+    ports:
+      - "3000:3000"
