@@ -5,7 +5,7 @@ const store = useMain();
 </script>
 
 <template>
-  <section class="w-full bg-secondary text-white py-2 px-4">
+  <section class="w-full bg-secondary text-white py-2 px-4 hidden lg:block">
     <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
       <!-- Contact Info: Phone, Email, Address -->
       <div class="flex flex-col md:flex-row gap-4 items-center">
