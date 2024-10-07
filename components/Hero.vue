@@ -5,6 +5,7 @@
   >
     <!-- Dark Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    ""
 
     <!-- Content Wrapper -->
     <div
@@ -16,16 +17,19 @@
         style="clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%)"
       >
         <h1
-          class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 transform"
+          class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 transform"
           style="transform: translateY(0); transition: transform 0.8s ease-out"
         >
-          Mobile & Computer Repair Service
+          <!-- Mobile & Computer Repair Service -->
+          Authorized Service Center for Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung &
+          iPhone Repairs
         </h1>
         <p
           class="text-lg md:text-xl mb-6 transform"
           style="transform: translateY(0); transition: transform 0.8s ease-out"
         >
-          Fast and reliable repair service for all your gadgets.
+        We offer expert repairs, servicing, original spare parts, and sales of phones and accessories.
+          <!-- Fast and reliable repair service for all your gadgets. -->
         </p>
         <div class="space-x-4">
           <button
