@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <div class="w-[100%] h-full pb-4">
+  <div class="w-full h-full overflow-x-hidden">
     <TopBar />
     <Header />
     <slot />

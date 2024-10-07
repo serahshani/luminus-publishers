@@ -3,36 +3,38 @@ import { useMain } from "~/store";
 
 const store = useMain();
 </script>
+
 <template>
-  <section
-    class="flex flex-row w-[100%] bg-secondary px-4 text-white justify-center items-center"
-  >
-    <div class="w-full flex flex-row justify-center gap-8">
-      <!-- phone section -->
-      <div class="flex flex-row items-center gap-2 divide-x-2 border-primary px-4">
-        <Icon name="bi:telephone-inbound-fill" class="topbar-icon" />
-        <span class="text-sm p-2">{{ store.phone }}</span>
+  <section class="w-full bg-secondary text-white py-2 px-4">
+    <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+      <!-- Contact Info: Phone, Email, Address -->
+      <div class="flex flex-col md:flex-row gap-4 items-center">
+        <!-- Phone section -->
+        <div class="flex flex-row items-center gap-2 hover-contact">
+          <Icon name="bi:telephone-inbound-fill" class="topbar-icon" />
+          <span class="text-sm">{{ store.phone }}</span>
+        </div>
 
-      </div>
-      <!-- email section -->
-      <div class="flex flex-row items-center gap-2">
-        <span class="text-sm">Email us</span>
-        <Icon name="bi:envelope-fill" class="topbar-icon" />
+        <!-- Email section -->
+        <div class="flex flex-row items-center gap-2 hover-contact">
+          <Icon name="bi:envelope-fill" class="topbar-icon" />
+          <span class="text-sm">Email us</span>
+        </div>
+
+        <!-- Address section -->
+        <div class="flex flex-row items-center gap-2 hover-contact">
+          <Icon name="bi:geo-alt-fill" class="topbar-icon" />
+          <span class="text-sm">Address</span>
+        </div>
       </div>
 
-      <!-- address -->
-      <div class="flex flex-row items-center gap-2">
-        <span class="text-sm">Address</span>
-        <Icon name="bi:geo-alt-fill" class="topbar-icon" />
-      </div>
-
-      <!-- socials -->
-      <div class="flex flex-row items-center justify-center gap-4 py-2 mt-2">
-        <!-- <span class="text-sm">Socials</span> -->
+      <!-- Social Media Links -->
+      <div class="flex gap-4 items-center mt-4 md:mt-0">
         <a
           :href="store.socials.facebook"
           target="_blank"
           rel="noopener noreferrer"
+          class="hover-social"
         >
           <Icon name="bi:facebook" class="topbar-icon" />
         </a>
@@ -40,6 +42,7 @@ const store = useMain();
           :href="store.socials.instagram"
           target="_blank"
           rel="noopener noreferrer"
+          class="hover-social"
         >
           <Icon name="bi:instagram" class="topbar-icon" />
         </a>
@@ -47,6 +50,7 @@ const store = useMain();
           :href="store.socials.twitter"
           target="_blank"
           rel="noopener noreferrer"
+          class="hover-social"
         >
           <Icon name="bi:twitter" class="topbar-icon" />
         </a>
@@ -54,8 +58,35 @@ const store = useMain();
     </div>
   </section>
 </template>
+
 <style scoped>
-.topbar-icon{
-  @apply text-primary w-5 h-5;
+/* Icon Styling */
+.topbar-icon {
+  @apply w-5 h-5 text-white;
+}
+
+/* Hover and Scale Effect for Contact Info */
+.hover-contact {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+.hover-contact:hover {
+  @apply text-primary;
+  transform: scale(1.05);
+}
+
+/* Hover and Scale Effect for Social Icons */
+.hover-social {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+.hover-social:hover .topbar-icon {
+  @apply text-primary;
+  transform: scale(1.2);
+}
+
+/* On hover, the entire contact section scales and color changes */
+.hover-contact:hover .topbar-icon {
+  @apply text-primary;
 }
 </style>

@@ -83,6 +83,16 @@
     }
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
+  body{
+    @apply overflow-x-hidden;
+  }
+
+  
+
   
 
   
