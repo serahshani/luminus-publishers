@@ -10,6 +10,7 @@ WORKDIR /src
 COPY package*.json ./
 COPY . .
 
+RUN apt-get  update && apt-get install -y  curl  wget
 RUN npm i -g sharp-cli
 
 RUN yarn install --ignore-engines
