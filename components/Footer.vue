@@ -1,13 +1,21 @@
+<script lang="ts" setup>
+import { useMain } from '~/store';
+
+  const store   = useMain();
+  
+</script>
 <template>
   <footer class="bg-gray-900 text-white py-8">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
       <!-- Contact Info -->
       <div class="flex flex-col px-4 gap-3">
         <h4 class="text-lg font-bold">Contact Info</h4>
-        <p class="text-sm">Pioneer House, 1st Floor, Shop 109, Oginga Odinga Street, Kisumu</p>
-        <p class="text-sm">Phone: 0701482132</p>
-        <p class="text-sm">Email: info@sihotechnologies.com</p>
-        <p class="text-sm">Operating Hours: Mon-Sun, 9 AM - 6 PM</p>
+        <p class="text-sm">
+          {{store.address}}
+        </p>
+        <p class="text-sm">Phone: {{store.phone}}</p>
+        <p class="text-sm">Email: {{store.email}}</p>
+        <p class="text-sm">Operating Hours: {{store.operatingHours}}</p>
       </div>
       <!-- Social Links -->
       <div class="px-4">
@@ -21,14 +29,14 @@
       <div class="px-4">
         <h4 class="text-lg font-bold">Subscribe to Our Newsletter</h4>
         <form>
-          <input 
-            type="email" 
-            placeholder="Your Email" 
-            class="w-full px-4 py-2 rounded border mb-2" 
-            required 
+          <input
+            type="email"
+            placeholder="Your Email"
+            class="w-full px-4 py-2 rounded border mb-2"
+            required
           />
-          <button 
-            class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded w-full" 
+          <button
+            class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded w-full"
             type="submit"
           >
             Subscribe
@@ -38,10 +46,6 @@
     </div>
   </footer>
 </template>
-
-<script lang="ts" setup>
-  // Add any necessary logic here
-</script>
 
 <style scoped>
 /* Ensure no overflow occurs */

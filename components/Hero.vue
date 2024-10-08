@@ -9,12 +9,10 @@
 
     <!-- Content Wrapper -->
     <div
-      class="relative container mx-auto grid grid-cols-1 lg:grid-cols-2 items-center h-full"
+      class="relative container mx-auto grid grid-cols-1 lg:grid-cols-5 items-center h-full"
     >
       <!-- Left Text Content with Parallax and Slanted Effect -->
-      <div
-        class="relative z-10 text-white px-6 py-12 lg:py-20 lg:px-12 bg-gradient-to-r from-black to-transparent"
-        style="clip-path: polygon(0 0, 100% 0, 70% 100%, 0% 100%)"
+      <div class="relative z-10 text-white px-6 py-12 lg:py-20 lg:px-12 lg:col-span-3 bg-gradient-to-r from-black to-transparent lg:clip-hero"
       >
         <h1
           class="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 transform"
@@ -31,14 +29,14 @@
         We offer expert repairs, servicing, original spare parts, and sales of phones and accessories.
           <!-- Fast and reliable repair service for all your gadgets. -->
         </p>
-        <div class="space-x-4">
+        <div class="space-x-2 grid grid-cols-1 gap-2 lg:grid-cols-5">
           <button
-            class="bg-yellow-400 text-black px-6 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all"
+            class="bg-yellow-400 text-black px-3 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all lg:col-span-2 z-40"
           >
             Book Appointment
           </button>
           <button
-            class="bg-transparent border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-all"
+            class="bg-transparent border border-white text-white px-2 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-all lg:col-span-2"
           >
             Get a Quote
           </button>
@@ -46,7 +44,7 @@
       </div>
 
       <!-- Right Image Content -->
-      <div class="hidden lg:block relative">
+      <div class="hidden lg:block relative lg:col-span-2">
         <!-- <img
           src="/hero-img.png"
           alt="Repair Service"

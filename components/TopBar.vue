@@ -24,7 +24,7 @@ const store = useMain();
         <!-- Address section -->
         <div class="flex flex-row items-center gap-2 hover-contact">
           <Icon name="bi:geo-alt-fill" class="topbar-icon" />
-          <span class="text-sm">Address</span>
+          <span class="text-sm">{{ store.address }}</span>
         </div>
       </div>
 

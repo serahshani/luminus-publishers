@@ -10,7 +10,10 @@ const toggleMenu = () => {
   <header class="bg-gray-900 text-white py-4">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo/Title -->
-      <h1 class="text-2xl font-bold">SIHO TECHNOLOGIES</h1>
+      <h1 class="text-2xl font-bold">
+        <!-- SIHO TECHNOLOGIES -->
+         <img src="/logo.png" alt="SIHO TECHNOLOGIES" class="w-12 h-12" />
+      </h1>
 
       <!-- Mobile Menu Button (Hamburger Icon) -->
       <button @click="toggleMenu" class="md:hidden focus:outline-none">

@@ -2,8 +2,9 @@ import { defineStore } from 'pinia'
 
 export const useMain = defineStore('main', () => {
   const email = ref('info@sihotechnologies.com');
-  const phone = ref('1234567890');
-  const address = ref('KISUMU DALA');
+  const phone = ref('0701482132');
+  const address = ref('Pioneer House, 1st Floor, Shop 109, Oginga Odinga Street, Kisumu');
+  const operatingHours = ref("Mon-Sun, 9 AM - 6 PM");
   const socials = ref({
     facebook: 'https://facebook.com',
     twitter: 'https://twitter.com',
@@ -60,5 +61,6 @@ export const useMain = defineStore('main', () => {
     navLinks,
     brand,
     isMenuOpen,
+    operatingHours
   }
 })

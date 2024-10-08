@@ -1,6 +1,6 @@
 services:
   frontend:
-    container_name: nextunesolutions-frontend
+    container_name: siho-frontend
     build:
       context: .
       dockerfile: Dockerfile.dev
