@@ -8,10 +8,10 @@ useSeoMeta({
   ogUrl: 'https://www.sihotechnologies.com',
   twitterTitle: 'SIHO TECHNOLOGIES  | Home',
   twitterDescription: 'An authorized service center for Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung & iPhone Repairs. We offer expert repair, servicing, original spare parts, and sales of phones and accessories. Trust us for all your gadget repair needs.',
-  twitterImage: '/logo.png',
+  twitterImage: 'https://www.sihotechnologies.com/logo.png',
   twitterCard: 'summary',
   twitterSite: '@siho_technologies',
-  ogImage: '/logo.png',
+  ogImage: 'https://www.sihotechnologies.com/logo.png',
 })
 
 useHead({
