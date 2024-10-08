@@ -25,7 +25,7 @@ useHead({
       {
         rel: 'icon',
         type: 'image/png',
-        href: '/logo.png'
+        href: 'https://www.sihotechnologies.com/logo.png'
       },
       {
         rel: 'canonical',
