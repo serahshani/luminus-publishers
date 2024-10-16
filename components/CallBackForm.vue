@@ -1,6 +1,4 @@
 <script lang="ts" setup>
-
-
 onMounted(() => {
   const formElement = document.getElementById("callback-form");
   if (formElement) {
@@ -8,26 +6,40 @@ onMounted(() => {
   }
 });
 
+const { $toast } = useNuxtApp();
 
-const{ $toast } = useNuxtApp()
-
+const loading = ref(false);
 
 const name = ref("");
 const phoneNumber = ref("");
 
-
 const requestCallback = async () => {
-  console.log(name.value, phoneNumber.value);
-  $toast.success("Thank you for your request. We will get back to you shortly.");
-  await saveRequestCallback({ name: name.value, phoneNumber: phoneNumber.value });
-}
-
+  if (loading.value) {
+    $toast.success("Wait for loading to complete");
+    return;
+  }
+  try {
+    loading.value = true;
+    console.log(name.value, phoneNumber.value);
+    $toast.success(
+      "Thank you for your request. We will get back to you shortly."
+    );
+    await saveRequestCallback({
+      name: name.value,
+      phoneNumber: phoneNumber.value,
+    });
+  } catch (error) {
+    $toast.error(`Failed to send request. Please try again later. ${error}`);
+  } finally {
+    loading.value = false;
+  }
+};
 </script>
 <template>
   <section
     id="callback-form"
     class="py-12 bg-cover bg-center bg-gray-200 relative"
-    style="background-image: url('/callback-form.webp')"
+    style="background-image: url(&quot;/callback-form.webp&quot;)"
   >
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <!-- Dark overlay -->
@@ -70,7 +82,8 @@ const requestCallback = async () => {
           <button
             class="w-full bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
           >
-            Request a Call Back
+            <UtilsLoadingButtonSpinner v-if="loading" />
+            <span v-else> Request a Call Back </span>
           </button>
         </form>
       </div>

@@ -1,20 +1,29 @@
 <script lang="ts" setup>
-import { useMain } from '~/store';
+import { useMain } from "~/store";
 
-  const store   = useMain();
-  const subscribeEmail = ref('');
+const store = useMain();
+const subscribeEmail = ref("");
 
-  const {$toast} = useNuxtApp();
-  /**
-   * Subscribe to the newsletter.
-   * This function takes no parameters and subscribes the email address stored in
-   * the subscribeEmail ref to the newsletter.
-   */
-  const subscribeNewsLetter = async () => {
-    console.log(subscribeEmail.value);
-    await saveSubscribeNewsLetter({email: subscribeEmail.value});
-    $toast.success("You have successfully subscribed to our newsletter. Thank you!");
+const { $toast } = useNuxtApp();
+const loading = ref(false);
+
+const subscribeNewsLetter = async () => {
+  if (loading.value) {
+    $toast.success("Wait for loading to complete");
+    return;
   }
+  try {
+    console.log(subscribeEmail.value);
+    await saveSubscribeNewsLetter({ email: subscribeEmail.value });
+    $toast.success(
+      "You have successfully subscribed to our newsletter. Thank you!"
+    );
+  } catch (error) {
+    $toast.error(`Something went wrong. Please try again later. ${error}`);
+  } finally {
+    loading.value = false;
+  }
+};
 </script>
 <template>
   <footer class="bg-gray-900 text-white py-8">
@@ -23,11 +32,11 @@ import { useMain } from '~/store';
       <div class="flex flex-col px-4 gap-3">
         <h4 class="text-lg font-bold">Contact Info</h4>
         <p class="text-sm">
-          {{store.address}}
+          {{ store.address }}
         </p>
-        <p class="text-sm">Phone: {{store.phone}}</p>
-        <p class="text-sm">Email: {{store.email}}</p>
-        <p class="text-sm">Operating Hours: {{store.operatingHours}}</p>
+        <p class="text-sm">Phone: {{ store.phone }}</p>
+        <p class="text-sm">Email: {{ store.email }}</p>
+        <p class="text-sm">Operating Hours: {{ store.operatingHours }}</p>
       </div>
       <!-- Social Links -->
       <div class="px-4">
@@ -40,9 +49,7 @@ import { useMain } from '~/store';
       <!-- Newsletter Signup -->
       <div class="px-4">
         <h4 class="text-lg font-bold">Subscribe to Our Newsletter</h4>
-        <form
-          @submit.prevent="subscribeNewsLetter"
-        >
+        <form @submit.prevent="subscribeNewsLetter">
           <input
             type="email"
             placeholder="Your Email"
@@ -53,7 +60,8 @@ import { useMain } from '~/store';
             class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded w-full"
             type="submit"
           >
-            Subscribe
+            <UtilsLoadingButtonSpinner v-if="loading" />
+            <span v-else>Subscribe</span>
           </button>
         </form>
       </div>

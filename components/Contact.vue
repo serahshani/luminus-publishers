@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 const { $toast } = useNuxtApp();
+const loading = ref<Boolean>(false);
+
 const name = ref("");
 const email = ref("");
 const phone = ref("");
@@ -9,7 +11,12 @@ const location = ref("");
 const message = ref("");
 
 const requestCallback = async () => {
+  if (loading.value) {
+    $toast.success("Wait for loading to complete");
+    return;
+  }
   try {
+    loading.value = true;
     await saveSubmitInquiry({
       name: name.value,
       email: email.value,
@@ -31,6 +38,8 @@ const requestCallback = async () => {
     $toast.error(
       "An error occurred while submitting your request. Please try again later."
     );
+  } finally {
+    loading.value = false;
   }
 };
 </script>
@@ -152,7 +161,8 @@ const requestCallback = async () => {
             <button
               class="w-full bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
             >
-              Submit Inquiry
+              <UtilsLoadingButtonSpinner v-if="loading" />
+              <span v-else> Submit Inquiry </span>
             </button>
           </form>
         </div>
