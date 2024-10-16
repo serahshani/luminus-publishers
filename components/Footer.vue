@@ -2,7 +2,19 @@
 import { useMain } from '~/store';
 
   const store   = useMain();
-  
+  const subscribeEmail = ref('');
+
+  const {$toast} = useNuxtApp();
+  /**
+   * Subscribe to the newsletter.
+   * This function takes no parameters and subscribes the email address stored in
+   * the subscribeEmail ref to the newsletter.
+   */
+  const subscribeNewsLetter = async () => {
+    console.log(subscribeEmail.value);
+    await saveSubscribeNewsLetter({email: subscribeEmail.value});
+    $toast.success("You have successfully subscribed to our newsletter. Thank you!");
+  }
 </script>
 <template>
   <footer class="bg-gray-900 text-white py-8">
@@ -28,7 +40,9 @@ import { useMain } from '~/store';
       <!-- Newsletter Signup -->
       <div class="px-4">
         <h4 class="text-lg font-bold">Subscribe to Our Newsletter</h4>
-        <form>
+        <form
+          @submit.prevent="subscribeNewsLetter"
+        >
           <input
             type="email"
             placeholder="Your Email"

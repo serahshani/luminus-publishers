@@ -11,8 +11,11 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
-    'shadcn-nuxt'
+    'shadcn-nuxt',
+    '@nuxtjs/sanity'
   ],
+
+
 
 
   tailwindcss: {
