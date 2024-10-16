@@ -31,7 +31,13 @@ useHead({
         rel: 'canonical',
         href: 'https://www.sihotechnologies.com'
       }
-    ]
+    ],
+    script: [
+    {
+      src: "https://embed.tawk.to/670f5df22480f5b4f58e0b99/1iaa0dvha",
+      async: true
+    }
+  ]
 });
 
 </script>
