@@ -13,6 +13,7 @@ const subscribeNewsLetter = async () => {
     return;
   }
   try {
+    loading.value = true;
     console.log(subscribeEmail.value);
     await saveSubscribeNewsLetter({ email: subscribeEmail.value });
     $toast.success(
@@ -52,8 +53,10 @@ const subscribeNewsLetter = async () => {
         <form @submit.prevent="subscribeNewsLetter">
           <input
             type="email"
+            name="email"
             placeholder="Your Email"
-            class="w-full px-4 py-2 rounded border mb-2"
+            v-model="subscribeEmail"
+            class="w-full px-4 py-2 rounded border mb-2 text-black"
             required
           />
           <button

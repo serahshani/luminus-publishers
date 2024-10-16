@@ -1,28 +1,32 @@
 import  groq  from "@nuxtjs/sanity";
-import  {createClient }  from "@sanity/client";
 
-const client = createClient({
-    token: process.env.SANITY_TOKEN,
-    projectId: 'xpio1q22',
-    dataset: 'production',  
-    
-});
 
 export const saveRequestCallback = async ({
-    name , phoneNumber
-}:{
-    name: string,
-    phoneNumber: string
+  name,
+  phoneNumber,
+}: {
+  name: string;
+  phoneNumber: string;
 }) => {
-  
 
-  
+   return await useFetch("/api/saveRequestCallBack", {
+      method: "POST",
+      body: {
+        name,
+        phoneNumber,
+      },
+    })
 };
 
 export const saveSubscribeNewsLetter = async ({
   email}: {email: string}) => {
-  
-}
+    return  await useFetch("/api/saveNewsLetter", {
+      method: "POST",
+      body: {
+        email,
+      },
+    })
+  }
 
 export const saveSubmitInquiry = async ({
   name,
@@ -42,6 +46,19 @@ export const saveSubmitInquiry = async ({
   message: string;
 }) => {
 
+  return  await useFetch("/api/saveInquiry", {
+    method: "POST",
+    body: {
+      name,
+      email,
+      phone,
+      device,
+      warranty,
+      location,
+      message,
+    },
+  })
+ 
 }
 
 

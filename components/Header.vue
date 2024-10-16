@@ -35,12 +35,12 @@ const toggleMenu = () => {
 
       <!-- Call to Action Buttons (Visible on large screens) -->
       <div class="hidden md:flex space-x-4">
-        <button class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded">
+        <a href="#callback-form" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded">
           Request a Call Back
-        </button>
-        <button class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded">
+        </a>
+        <!-- <button class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded">
           Get a Free Quote
-        </button>
+        </button> -->
       </div>
     </div>
 

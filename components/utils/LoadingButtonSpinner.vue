@@ -7,8 +7,8 @@ const props = defineProps({
 })
 </script>
 <template>
-  <div class="flex flex-row gap-4">
-    <Icon name="eos-icons:loading" class="w-5 h-5 text-white animate-spin" />
+  <div class="flex flex-row gap-4 items-center justify-center">
+    <Icon name="eos-icons:loading" class="w-12 h-12 text-white animate-spin" />
     <span class="text-white">{{ loadingText }}</span>
   </div>
 </template>

@@ -21,9 +21,7 @@ const requestCallback = async () => {
   try {
     loading.value = true;
     console.log(name.value, phoneNumber.value);
-    $toast.success(
-      "Thank you for your request. We will get back to you shortly."
-    );
+   
     await saveRequestCallback({
       name: name.value,
       phoneNumber: phoneNumber.value,
@@ -31,13 +29,15 @@ const requestCallback = async () => {
   } catch (error) {
     $toast.error(`Failed to send request. Please try again later. ${error}`);
   } finally {
+    $toast.success(
+      "Thank you for your request. We will get back to you shortly."
+    );
     loading.value = false;
   }
 };
 </script>
 <template>
   <section
-    id="callback-form"
     class="py-12 bg-cover bg-center bg-gray-200 relative"
     style="background-image: url(&quot;/callback-form.webp&quot;)"
   >
@@ -71,12 +71,14 @@ const requestCallback = async () => {
             type="text"
             placeholder="Your Name"
             v-model="name"
+            required
             class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
           />
           <input
             type="tel"
             placeholder="Your Phone Number"
             v-model="phoneNumber"
+            required
             class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
           />
           <button

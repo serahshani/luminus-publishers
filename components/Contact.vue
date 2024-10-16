@@ -10,7 +10,7 @@ const warranty = ref("");
 const location = ref("");
 const message = ref("");
 
-const requestCallback = async () => {
+const submitInquiry = async () => {
   if (loading.value) {
     $toast.success("Wait for loading to complete");
     return;
@@ -26,20 +26,21 @@ const requestCallback = async () => {
       location: location.value,
       message: message.value,
     });
-    // $toast.success("Thank you for your request. We will get back to you shortly.");
-    // name.value = '';
-    // email.value = '';
-    // phone.value = '';
-    // device.value = '';
-    // warranty.value = '';
-    // location.value = '';
-    // message.value = '';
+   
   } catch (error) {
     $toast.error(
       "An error occurred while submitting your request. Please try again later."
     );
   } finally {
     loading.value = false;
+     $toast.success("Thank you for your request. We will get back to you shortly.");
+    name.value = '';
+    email.value = '';
+    phone.value = '';
+    device.value = '';
+    warranty.value = '';
+    location.value = '';
+    message.value = '';
   }
 };
 </script>
@@ -70,14 +71,18 @@ const requestCallback = async () => {
           <h2 class="text-3xl font-bold text-center mb-6">
             Submit Your Inquiry
           </h2>
-          <form class="space-y-4">
+          <form class="space-y-4"
+            @submit.prevent="submitInquiry"
+          >
             <div>
               <label for="name" class="block text-sm font-medium">Name</label>
               <input
                 type="text"
                 id="name"
+                v-model="name"
                 class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
                 placeholder="Your Name"
+                required
               />
             </div>
             <div>
@@ -85,8 +90,10 @@ const requestCallback = async () => {
               <input
                 type="email"
                 id="email"
+                v-model="email"
                 class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
                 placeholder="Your Email"
+                required
               />
             </div>
             <div>
@@ -96,8 +103,10 @@ const requestCallback = async () => {
               <input
                 type="tel"
                 id="phone"
+                v-model="phone"
                 class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
                 placeholder="Your Phone Number"
+                required
               />
             </div>
             <div>
@@ -106,29 +115,38 @@ const requestCallback = async () => {
               >
               <select
                 id="device"
+                v-model="device"
+                required
                 class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
               >
-                <option>Huawei</option>
-                <option>Realme</option>
-                <option>Redmi</option>
-                <option>Tecno</option>
-                <option>Infinix</option>
-                <option>Itel</option>
-                <option>Samsung</option>
-                <option>iPhone</option>
+                <option selected  value="">Select Device</option>
+                <option value="Huawei">Huawei</option>
+                <option value="Realme">Realme</option>
+                <option value="Redmi">Redmi</option>
+                <option value="Tecno">Tecno</option>
+                <option value="Infinix">Infinix</option>
+                <option value="Itel">Itel</option>
+                <option value="Samsung">Samsung</option>
+                <option value="iPhone">iPhone</option>
               </select>
             </div>
             <div>
               <label class="block text-sm font-medium">Warranty Status</label>
               <div class="flex space-x-4">
                 <label class="flex items-center">
-                  <input type="radio" name="warranty" value="in" class="mr-2" />
+                  <input
+                   type="radio" 
+                   name="warranty" 
+                   value="in" 
+                   v-model="warranty"
+                   class="mr-2" />
                   In Warranty
                 </label>
                 <label class="flex items-center">
                   <input
                     type="radio"
                     name="warranty"
+                    v-model="warranty"
                     value="out"
                     class="mr-2"
                   />
@@ -143,8 +161,10 @@ const requestCallback = async () => {
               <input
                 type="text"
                 id="location"
+                v-model="location"
                 class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
                 placeholder="Your Location"
+                required
               />
             </div>
             <div>
@@ -154,8 +174,10 @@ const requestCallback = async () => {
               <textarea
                 id="message"
                 rows="4"
+                v-model="message"
                 class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
                 placeholder="Your Message"
+                required
               ></textarea>
             </div>
             <button

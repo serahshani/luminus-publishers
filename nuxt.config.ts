@@ -26,7 +26,13 @@ export default defineNuxtConfig({
     },
     config: {},
     viewer: true,
-  }
+  },
+  
+  // runtimeConfig: {
+  //   public: {
+  //    SANITY_API_TOKEN: process.env.SANITY_API_TOKEN,
+  //   },
+  // },
 
   
 })
