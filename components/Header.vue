@@ -7,17 +7,17 @@ const toggleMenu = () => {
 };
 </script>
 <template>
-  <header class="bg-gray-900 text-white py-4">
+  <header class="bg-neutral-100 text-black py-4">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo/Title -->
       <h1 class="text-2xl font-bold">
         <!-- FIX POINT -->
-         <img src="/logo.png" alt="FIX POINT" class="w-12 h-12" />
+         <img src="/logo.png" alt="FIX POINT" class="w-16 h-16" />
       </h1>
 
       <!-- Mobile Menu Button (Hamburger Icon) -->
       <button @click="toggleMenu" class="md:hidden focus:outline-none">
-        <Icon name="bi:list" class="w-6 h-6 text-white" />
+        <Icon name="bi:list" class="w-6 h-6 text-black" />
       </button>
 
       <!-- Main Navigation -->
