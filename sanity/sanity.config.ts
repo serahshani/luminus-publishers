@@ -5,7 +5,7 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'SIHO TECHNOLOGIES',
+  title: 'FIX POINT',
 
   projectId: 'xpio1q22',
   dataset: 'production',

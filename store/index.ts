@@ -1,18 +1,18 @@
 import { defineStore } from 'pinia'
 
 export const useMain = defineStore('main', () => {
-  const email = ref('info@sihotechnologies.com');
+  const email = ref('fixpointservicecentre@gmail.com');
   const phone = ref('0701482132');
   const address = ref('Pioneer House, 1st Floor, Shop 109, Oginga Odinga Street, Kisumu');
   const operatingHours = ref("Mon-Sun, 9 AM - 6 PM");
   const socials = ref({
-    facebook: 'https://facebook.com',
+    facebook: 'https://www.facebook.com/fixpointrepairskisumu',
     twitter: 'https://twitter.com',
     instagram: 'https://instagram.com',
     tiktok: 'https://tiktok.com',
   });
   const isMenuOpen = ref(false);
-  const brand = ref('Siho Technologies');
+  const brand = ref('Fix Point');
   const navLinks = ref<NavLink[]>([
     {
       name: 'Home',

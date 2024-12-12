@@ -11,8 +11,8 @@ const toggleMenu = () => {
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo/Title -->
       <h1 class="text-2xl font-bold">
-        <!-- SIHO TECHNOLOGIES -->
-         <img src="/logo.png" alt="SIHO TECHNOLOGIES" class="w-12 h-12" />
+        <!-- FIX POINT -->
+         <img src="/logo.png" alt="FIX POINT" class="w-12 h-12" />
       </h1>
 
       <!-- Mobile Menu Button (Hamburger Icon) -->

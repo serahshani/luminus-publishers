@@ -12,8 +12,14 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxt/icon',
     'shadcn-nuxt',
-    '@nuxtjs/sanity'
+    '@nuxtjs/sanity',
+    'nuxt-gtag',
   ],
+
+
+  gtag: {
+    id: 'G-CG6E55EP3Y'
+  },
 
 
 

@@ -1,17 +1,17 @@
 <script lang="ts" setup>
 useSeoMeta({
-  title:"SIHO TECHNOLOGIES  | Service Center in Kisumu",
-  description: "SIHO TECHNOLOGIES is an authorized service center for Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung & iPhone Repairs. We offer expert repair, servicing, original spare parts, and sales of phones and accessories. Trust us for all your gadget repair needs.",
-  keywords:"SIHO TECHNOLOGIES, Authorized Service Center, Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung, iPhone Repairs, Phone Repairs, Gadget Repairs, Original Spare Parts, Phone Sales, Credit Phones, Kisumu, Kenya,Trust Us for Genuine Phone Repairs,Your Authorized Service Center in Kisumu,Expert Gadget Repair & Original Parts",
-  ogTitle:"SIHO TECHNOLOGIES  | Service Center in Kisumu",
+  title:"FIX POINT  | Service Center in Kisumu",
+  description: "FIX POINT is an authorized service center for Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung & iPhone Repairs. We offer expert repair, servicing, original spare parts, and sales of phones and accessories. Trust us for all your gadget repair needs.",
+  keywords:"FIX POINT, Authorized Service Center, Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung, iPhone Repairs, Phone Repairs, Gadget Repairs, Original Spare Parts, Phone Sales, Credit Phones, Kisumu, Kenya,Trust Us for Genuine Phone Repairs,Your Authorized Service Center in Kisumu,Expert Gadget Repair & Original Parts",
+  ogTitle:"FIX POINT  | Service Center in Kisumu",
   ogDescription: "An authorized service center for Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung & iPhone Repairs. We offer expert repair, servicing, original spare parts, and sales of phones and accessories. Trust us for all your gadget repair needs.",
-  ogUrl: 'https://www.sihotechnologies.com',
-  twitterTitle: 'SIHO TECHNOLOGIES  | Service Center in Kisumu',
+  ogUrl: 'https://www.fixpointkenya.co.ke',
+  twitterTitle: 'FIX POINT  | Service Center in Kisumu',
   twitterDescription: 'An authorized service center for Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung & iPhone Repairs. We offer expert repair, servicing, original spare parts, and sales of phones and accessories. Trust us for all your gadget repair needs.',
-  twitterImage: 'https://www.sihotechnologies.com/logo.png',
+  twitterImage: 'https://www.fixpointkenya.co.ke/logo.png',
   twitterCard: 'summary',
-  twitterSite: '@siho_technologies',
-  ogImage: 'https://www.sihotechnologies.com/logo.png',
+  twitterSite: '@fixpointservicecenter',
+  ogImage: 'https://www.fixpointkenya.co.ke/logo.png',
 })
 
 useHead({
@@ -24,12 +24,13 @@ useHead({
     link: [
       {
         rel: 'icon',
-        type: 'image/png',
-        href: 'https://www.sihotechnologies.com/logo.png'
+        // type: 'image/png',
+        type: 'image/x-icon', // Changed from image/png to image/x-icon for .ico files
+        href: 'https://www.fixpointkenya.co.ke/favicon.ico'
       },
       {
         rel: 'canonical',
-        href: 'https://www.sihotechnologies.com'
+        href: 'https://www.fixpointkenya.co.ke'
       }
     ],
     script: [
