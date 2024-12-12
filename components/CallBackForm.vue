@@ -60,8 +60,8 @@ const requestCallback = async () => {
         id="callback-form"
         class="transition-opacity duration-700 ease-in-out opacity-0"
       >
-        <h2 class="text-4xl font-bold text-center lg:text-left text-white mb-8">
-          Request a Call Back
+        <h2 class="text-4xl  text-center lg:text-left text-white font-extrabold mb-8">
+          Request Call Back
         </h2>
         <form
           @submit.prevent="requestCallback"
@@ -72,17 +72,17 @@ const requestCallback = async () => {
             placeholder="Your Name"
             v-model="name"
             required
-            class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
+            class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
           />
           <input
             type="tel"
             placeholder="Your Phone Number"
             v-model="phoneNumber"
             required
-            class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
+            class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
           />
           <button
-            class="w-full bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
+            class="w-full bg-green-500 text-white font-extrabold px-4 py-2 rounded-md hover:bg-green-600 transition-all duration-300"
           >
             <UtilsLoadingButtonSpinner v-if="loading" />
             <span v-else> Request a Call Back </span>

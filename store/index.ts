@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 export const useMain = defineStore('main', () => {
   const email = ref('fixpointservicecentre@gmail.com');
   const phone = ref('0701482132');
-  const address = ref('Pioneer House, 1st Floor, Shop 109, Oginga Odinga Street, Kisumu');
+  const address = ref('Pioneer House, 1st Floor, Shop 100B, Oginga Odinga Street, Kisumu');
   const operatingHours = ref("Mon-Sun, 9 AM - 6 PM");
   const socials = ref({
     facebook: 'https://www.facebook.com/fixpointrepairskisumu',

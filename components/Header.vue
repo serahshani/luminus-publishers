@@ -22,23 +22,23 @@ const toggleMenu = () => {
 
       <!-- Main Navigation -->
       <nav class="hidden md:flex space-x-6">
-        <ul class="flex flex-row space-x-4">
-          <li><a href="#about" class="hover:text-yellow-500">About Us</a></li>
+        <ul class="flex flex-row space-x-8">
+          <li><a href="#about" class="hover:text-green-500 font-extrabold">About Us</a></li>
           <li>
-            <a href="#services" class="hover:text-yellow-500">Services</a>
+            <a href="#services" class="hover:text-green-500 font-extrabold">Services</a>
           </li>
           <li>
-            <a href="#contact" class="hover:text-yellow-500">Contact Us</a>
+            <a href="#contact" class="hover:text-green-500 font-extrabold">Contact Us</a>
           </li>
         </ul>
       </nav>
 
       <!-- Call to Action Buttons (Visible on large screens) -->
       <div class="hidden md:flex space-x-4">
-        <a href="#callback-form" class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded">
-          Request a Call Back
+        <a href="#callback-form" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white font-extrabold">
+          Request Call Back
         </a>
-        <!-- <button class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded">
+        <!-- <button class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded">
           Get a Free Quote
         </button> -->
       </div>

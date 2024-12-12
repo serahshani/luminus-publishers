@@ -60,7 +60,7 @@ const subscribeNewsLetter = async () => {
             required
           />
           <button
-            class="bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded w-full"
+            class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full text-white font-extrabold"
             type="submit"
           >
             <UtilsLoadingButtonSpinner v-if="loading" />

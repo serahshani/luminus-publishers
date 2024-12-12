@@ -80,7 +80,7 @@ const submitInquiry = async () => {
                 type="text"
                 id="name"
                 v-model="name"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
                 placeholder="Your Name"
                 required
               />
@@ -91,7 +91,7 @@ const submitInquiry = async () => {
                 type="email"
                 id="email"
                 v-model="email"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
                 placeholder="Your Email"
                 required
               />
@@ -104,7 +104,7 @@ const submitInquiry = async () => {
                 type="tel"
                 id="phone"
                 v-model="phone"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
                 placeholder="Your Phone Number"
                 required
               />
@@ -117,7 +117,7 @@ const submitInquiry = async () => {
                 id="device"
                 v-model="device"
                 required
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
               >
                 <option selected  value="">Select Device</option>
                 <option value="Huawei">Huawei</option>
@@ -162,7 +162,7 @@ const submitInquiry = async () => {
                 type="text"
                 id="location"
                 v-model="location"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
                 placeholder="Your Location"
                 required
               />
@@ -175,13 +175,13 @@ const submitInquiry = async () => {
                 id="message"
                 rows="4"
                 v-model="message"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-yellow-500 focus:ring focus:ring-yellow-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
                 placeholder="Your Message"
                 required
               ></textarea>
             </div>
             <button
-              class="w-full bg-yellow-500 text-black px-4 py-2 rounded-md hover:bg-yellow-600 transition-all duration-300"
+              class="w-full bg-green-500 text-white font-extrabold px-4 py-2 rounded-md hover:bg-green-600 transition-all duration-300"
             >
               <UtilsLoadingButtonSpinner v-if="loading" />
               <span v-else> Submit Inquiry </span>

@@ -31,7 +31,7 @@
         </p>
         <div class="space-x-2 grid grid-cols-1 gap-2 lg:grid-cols-5">
           <button
-            class="bg-yellow-400 text-black px-3 py-3 rounded-lg font-semibold hover:bg-yellow-500 transition-all lg:col-span-2 z-40"
+            class="bg-green-400 text-white font-extrabold px-3 py-3 rounded-lg P hover:bg-green-500 transition-all lg:col-span-2 z-40"
           >
             Book Appointment
           </button>
