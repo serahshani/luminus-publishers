@@ -14,7 +14,7 @@
 
     <!-- whatsapp icon   -->
 
-    <a href="https://wa.me/1234567890" class="whatsapp animate-bob" target="_blank">
+    <a href="https://wa.me/254701482132?Hello FixPoint Service Center" class="whatsapp animate-bob" target="_blank">
       <Icon name="logos:whatsapp-icon"  class="h-16 w-16"/>
     </a>
 
@@ -42,7 +42,7 @@
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-50px);
   }
   100% {
     transform: translateY(0);
