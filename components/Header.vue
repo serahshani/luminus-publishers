@@ -35,8 +35,13 @@ const toggleMenu = () => {
 
       <!-- Call to Action Buttons (Visible on large screens) -->
       <div class="hidden md:flex space-x-4">
-        <a href="#callback-form" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white font-extrabold">
+        <a href="#callback-form" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white font-extrabold flex items-center justify-center space-x-2">
+          <Icon name="si:phone-callback-fill" class="w-6 h-6" />
           Request Call Back
+        </a>
+        <a href="http://www.yoppa.co.ke" target="_blank" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white font-extrabold flex items-center justify-center space-x-2">
+          <Icon name="material-symbols:add-shopping-cart" class="w-6 h-6" />
+          Shop
         </a>
         <!-- <button class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded">
           Get a Free Quote

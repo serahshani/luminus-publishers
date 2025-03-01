@@ -58,7 +58,7 @@ const requestCallback = async () => {
       <!-- Right Form Section -->
       <div
         id="callback-form"
-        class="transition-opacity duration-700 ease-in-out opacity-0"
+        class="transition-opacity duration-700 ease-in-out opacity-0 pt-36"
       >
         <h2 class="text-4xl  text-center lg:text-left text-white font-extrabold mb-8">
           Request Call Back

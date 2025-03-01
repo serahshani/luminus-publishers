@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 </script>
 <template>
-  <section id="services" class="py-12 bg-gray-100">
+  <section id="services" class="py-12 pt-36 bg-gray-100">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl font-bold mb-6">Our Services</h2>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">

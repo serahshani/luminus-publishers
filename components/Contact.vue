@@ -45,7 +45,7 @@ const submitInquiry = async () => {
 };
 </script>
 <template>
-  <section id="contact" class="py-12 bg-white">
+  <section id="contact" class="py-12 pt-36 bg-white">
     <div class="container mx-auto">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
         <!-- Left Map Section -->

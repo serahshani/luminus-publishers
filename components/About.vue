@@ -1,5 +1,5 @@
 <template>
-  <section id="about" class="py-12 bg-white text-center">
+  <section id="about" class="py-12 pt-36 bg-white text-center">
     <div class="container mx-auto">
       <h2 class="text-4xl font-bold mb-6">About Fix Point</h2>
       <p class="text-lg text-gray-700 mb-4">
