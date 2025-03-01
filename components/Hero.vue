@@ -30,16 +30,16 @@
           <!-- Fast and reliable repair service for all your gadgets. -->
         </p>
         <div class="space-x-2 grid grid-cols-1 gap-2 lg:grid-cols-5">
-          <button
+          <a href="#callback-form"
             class="bg-green-400 text-white font-extrabold px-3 py-3 rounded-lg P hover:bg-green-500 transition-all lg:col-span-2 z-40"
           >
             Book Appointment
-          </button>
-          <button
+          </a>
+          <a href="#callback-form"
             class="bg-transparent border border-white text-white px-2 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-all lg:col-span-2"
           >
             Get a Quote
-          </button>
+          </a>
         </div>
       </div>
 
