@@ -13,7 +13,7 @@
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md">
           <!-- Gadget Repairs Icon -->
-          <Icon name="bi:laptop" class="text-4xl text-indigo-500 mb-4" />
+          <Icon name="bi:book" class="text-4xl text-indigo-500 mb-4" />
           <h3 class="text-xl font-semibold">Printing</h3>
           <p>Quality Hard Copy printing</p>
         </div>
@@ -26,19 +26,61 @@
         <div class="p-6 bg-white rounded-lg shadow-md">
           <!-- Phones on Credit Icon -->
           <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
-          <h3 class="text-xl font-semibold">Author Website Creation</h3>
+          <h3 class="text-xl font-semibold">Copyright</h3>
           <p>We give you an Online Presence!</p>
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md">
           <!-- Phones on Credit Icon -->
           <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
-          <h3 class="text-xl font-semibold">Author Website Creation</h3>
+          <h3 class="text-xl font-semibold">ISBN & BARCODE</h3>
           <p>We give you an Online Presence!</p>
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md">
           <!-- Phones on Credit Icon -->
           <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
-          <h3 class="text-xl font-semibold">Author Website Creation</h3>
+          <h3 class="text-xl font-semibold">Copy Editing</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Layout & Formating</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Cover Design</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Proofreading</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Ghost writing</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Content Editing</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">E-Book creation</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Type Setting</h3>
           <p>We give you an Online Presence!</p>
         </div>
       </div>
