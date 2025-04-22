@@ -23,6 +23,24 @@
           <h3 class="text-xl font-semibold">Author Website Creation</h3>
           <p>We give you an Online Presence!</p>
         </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Author Website Creation</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Author Website Creation</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
+        <div class="p-6 bg-white rounded-lg shadow-md">
+          <!-- Phones on Credit Icon -->
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Author Website Creation</h3>
+          <p>We give you an Online Presence!</p>
+        </div>
       </div>
     </div>
   </section>
