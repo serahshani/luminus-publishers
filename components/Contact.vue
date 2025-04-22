@@ -54,7 +54,7 @@ const submitInquiry = async () => {
         >
           <h2 class="text-3xl font-bold text-center mb-6">Find Us Here</h2>
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345099593!2d144.95373531531763!3d-37.81627997975168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0fbd5f63%3A0x5045675218cee90!2sYour%20Business%20Location!5e0!3m2!1sen!2sus!4v1629249122238!5m2!1sen!2sus"
+            src="https://maps.app.goo.gl/4B8TzQEPgfj5K58MA"
             width="100%"
             height="100%"
             class="w-full h-full rounded-lg"
@@ -80,7 +80,7 @@ const submitInquiry = async () => {
                 type="text"
                 id="name"
                 v-model="name"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 placeholder="Your Name"
                 required
               />
@@ -91,7 +91,7 @@ const submitInquiry = async () => {
                 type="email"
                 id="email"
                 v-model="email"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 placeholder="Your Email"
                 required
               />
@@ -104,55 +104,26 @@ const submitInquiry = async () => {
                 type="tel"
                 id="phone"
                 v-model="phone"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 placeholder="Your Phone Number"
                 required
               />
             </div>
             <div>
               <label for="device" class="block text-sm font-medium"
-                >Select Device</label
+                >Select Service</label
               >
               <select
                 id="device"
                 v-model="device"
                 required
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
               >
-                <option selected  value="">Select Device</option>
-                <option value="Huawei">Huawei</option>
-                <option value="Realme">Realme</option>
-                <option value="Redmi">Redmi</option>
-                <option value="Tecno">Tecno</option>
-                <option value="Infinix">Infinix</option>
-                <option value="Itel">Itel</option>
-                <option value="Samsung">Samsung</option>
-                <option value="iPhone">iPhone</option>
+                <option selected  value="">Select Service</option>
+                <option value="Publishing">Publishing</option>
+                <option value="Printing">Printing</option>
+                <option value="Author-website-creation">Author website creation</option>
               </select>
-            </div>
-            <div>
-              <label class="block text-sm font-medium">Warranty Status</label>
-              <div class="flex space-x-4">
-                <label class="flex items-center">
-                  <input
-                   type="radio" 
-                   name="warranty" 
-                   value="in" 
-                   v-model="warranty"
-                   class="mr-2" />
-                  In Warranty
-                </label>
-                <label class="flex items-center">
-                  <input
-                    type="radio"
-                    name="warranty"
-                    v-model="warranty"
-                    value="out"
-                    class="mr-2"
-                  />
-                  Out of Warranty
-                </label>
-              </div>
             </div>
             <div>
               <label for="location" class="block text-sm font-medium"
@@ -162,7 +133,7 @@ const submitInquiry = async () => {
                 type="text"
                 id="location"
                 v-model="location"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 placeholder="Your Location"
                 required
               />
@@ -175,13 +146,13 @@ const submitInquiry = async () => {
                 id="message"
                 rows="4"
                 v-model="message"
-                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
+                class="w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
                 placeholder="Your Message"
                 required
               ></textarea>
             </div>
             <button
-              class="w-full bg-green-500 text-white font-extrabold px-4 py-2 rounded-md hover:bg-green-600 transition-all duration-300"
+              class="w-full bg-indigo-500 text-white font-extrabold px-4 py-2 rounded-md hover:bg-indigo-600 transition-all duration-300"
             >
               <UtilsLoadingButtonSpinner v-if="loading" />
               <span v-else> Submit Inquiry </span>

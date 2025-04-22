@@ -12,7 +12,7 @@ const toggleMenu = () => {
       <!-- Logo/Title -->
       <h1 class="text-2xl font-bold">
         <!-- FIX POINT -->
-         <img src="/logo.png" alt="FIX POINT" class="w-16 h-16" />
+         <img src="/logo.png" alt="LUMINUSPUBLISHERS" class="w-16 h-16" />
       </h1>
 
       <!-- Mobile Menu Button (Hamburger Icon) -->
@@ -23,29 +23,29 @@ const toggleMenu = () => {
       <!-- Main Navigation -->
       <nav class="hidden md:flex space-x-6">
         <ul class="flex flex-row space-x-8">
-          <li><a href="#about" class="hover:text-green-500 font-extrabold">About Us</a></li>
+          <li><a href="#about" class="hover:text-blue-800 font-extrabold">About Us</a></li>
           <li>
-            <a href="#services" class="hover:text-green-500 font-extrabold">Services</a>
+            <a href="#services" class="hover:text-blue-800 font-extrabold">Services</a>
           </li>
           <li>
-            <a href="#contact" class="hover:text-green-500 font-extrabold">Contact Us</a>
+            <a href="#contact" class="hover:text-blue-800 font-extrabold">Contact Us</a>
           </li>
         </ul>
       </nav>
 
       <!-- Call to Action Buttons (Visible on large screens) -->
       <div class="hidden md:flex space-x-4">
-        <a href="#callback-form" class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded text-white font-extrabold flex items-center justify-center space-x-2">
+        <a href="#callback-form" class="bg-indigo-900 hover:bg-blue-500 px-4 py-2 rounded text-white font-extrabold flex items-center justify-center space-x-2">
           <Icon name="si:phone-callback-fill" class="w-6 h-6" />
           Request Call Back
         </a>
-        <a href="http://www.yoppa.co.ke" target="_blank" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white font-extrabold flex items-center justify-center space-x-2">
+        <!-- <a href="http://www.yoppa.co.ke" target="_blank" class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded text-white font-extrabold flex items-center justify-center space-x-2">
           <Icon name="material-symbols:add-shopping-cart" class="w-6 h-6" />
           Shop
-        </a>
-        <!-- <button class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded">
+        </a> -->
+        <button class="bg-blue-800 hover:bg-rose-800 text-white px-4 py-2 rounded">
           Get a Free Quote
-        </button> -->
+        </button>
       </div>
     </div>
 

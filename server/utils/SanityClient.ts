@@ -1,10 +1,10 @@
-import  groq  from "@nuxtjs/sanity";
+// import  groq  from "@nuxtjs/sanity";
 import  {createClient }  from "@sanity/client";
 
 // console.log("================>" ,process.env.SANITY_API_TOKEN)
 if(!process.env.SANITY_API_TOKEN){
 
-    throw new Error('Missing SANITY_API_TOKEN')
+    // throw new Error('Missing SANITY_API_TOKEN')
 }
 
 

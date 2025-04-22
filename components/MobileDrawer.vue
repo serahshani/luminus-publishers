@@ -47,12 +47,12 @@ const closeDrawer = () => {
         <!-- Call to Action Buttons -->
         <div class="mt-8 px-6 space-y-4">
           <button
-            class="w-full bg-green-500 hover:bg-green-600 px-4 py-2 rounded"
+            class="w-full bg-blue-500 hover:bg-indigo-900 px-4 py-2 rounded"
           >
             Request a Call Back
           </button>
           <button
-            class="w-full bg-green-500 hover:bg-green-600 px-4 py-2 rounded"
+            class="w-full bg-blue-500 hover:bg-indigo-900 px-4 py-2 rounded"
           >
             Get a Free Quote
           </button>

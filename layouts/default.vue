@@ -14,7 +14,7 @@
 
     <!-- whatsapp icon   -->
 
-    <a href="https://wa.me/254701482132?Hello FixPoint Service Center" class="whatsapp animate-bob" target="_blank">
+    <a href="https://wa.me/254741185838?Hello Luminus Publishers!" class="whatsapp animate-bob" target="_blank">
       <Icon name="logos:whatsapp-icon"  class="h-16 w-16"/>
     </a>
 

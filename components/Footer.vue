@@ -43,8 +43,8 @@ const subscribeNewsLetter = async () => {
       <div class="px-4">
         <h4 class="text-lg font-bold">Follow Us</h4>
         <ul class="space-y-2 text-sm">
-          <li><a href="#" class="hover:underline">Facebook</a></li>
-          <li><a href="#" class="hover:underline">Instagram</a></li>
+          <li><a href="{{ store.socials.facebook }}" class="hover:underline">Facebook</a></li>
+          <li><a href="{{ store.socials.instagram }}" class="hover:underline">Instagram</a></li>
         </ul>
       </div>
       <!-- Newsletter Signup -->
@@ -60,7 +60,7 @@ const subscribeNewsLetter = async () => {
             required
           />
           <button
-            class="bg-green-500 hover:bg-green-600 px-4 py-2 rounded w-full text-white font-extrabold"
+            class="bg-indigo-500 hover:bg-indigo-600 px-4 py-2 rounded w-full text-white font-extrabold"
             type="submit"
           >
             <UtilsLoadingButtonSpinner v-if="loading" />

@@ -39,7 +39,7 @@ const requestCallback = async () => {
 <template>
   <section
     class="py-12 bg-cover bg-center bg-gray-200 relative"
-    style="background-image: url(&quot;/callback-form.webp&quot;)"
+    style="background-image: url(&quot;/callback-form.png&quot;)"
   >
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <!-- Dark overlay -->
@@ -49,7 +49,7 @@ const requestCallback = async () => {
       <!-- Left Image Section for Large Screens -->
       <div class="hidden lg:block">
         <img
-          src="/callback-form.webp"
+          src="/callback-form.png"
           alt="Callback Illustration"
           class="w-full h-auto rounded-lg shadow-lg"
         />
@@ -72,17 +72,17 @@ const requestCallback = async () => {
             placeholder="Your Name"
             v-model="name"
             required
-            class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
+            class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
           />
           <input
             type="tel"
             placeholder="Your Phone Number"
             v-model="phoneNumber"
             required
-            class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-green-500 focus:ring focus:ring-green-200"
+            class="px-4 py-2 border border-gray-300 rounded w-full focus:outline-none focus:border-indigo-500 focus:ring focus:ring-indigo-200"
           />
           <button
-            class="w-full bg-green-500 text-white font-extrabold px-4 py-2 rounded-md hover:bg-green-600 transition-all duration-300"
+            class="w-full bg-blue-500 hover:bg-indigo-900 text-white font-extrabold px-4 py-2 rounded-md transition-all duration-300"
           >
             <UtilsLoadingButtonSpinner v-if="loading" />
             <span v-else> Request a Call Back </span>

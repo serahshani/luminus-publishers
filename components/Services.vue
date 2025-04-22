@@ -7,21 +7,21 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div class="p-6 bg-white rounded-lg shadow-md">
           <!-- Phone Repairs Icon -->
-          <Icon name="bi:phone" class="text-4xl text-green-500 mb-4" />
-          <h3 class="text-xl font-semibold">Phone Repairs</h3>
-          <p>All major brands</p>
+          <Icon name="bi:phone" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Book Publishing</h3>
+          <p>We bring your Book to life!</p>
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md">
           <!-- Gadget Repairs Icon -->
-          <Icon name="bi:laptop" class="text-4xl text-green-500 mb-4" />
-          <h3 class="text-xl font-semibold">Gadget Repairs</h3>
-          <p>Laptops, TVs, Computers</p>
+          <Icon name="bi:laptop" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Printing</h3>
+          <p>Quality Hard Copy printing</p>
         </div>
         <div class="p-6 bg-white rounded-lg shadow-md">
           <!-- Phones on Credit Icon -->
-          <Icon name="bi:credit-card" class="text-4xl text-green-500 mb-4" />
-          <h3 class="text-xl font-semibold">Phones on Credit</h3>
-          <p>Get phones on affordable credit terms</p>
+          <Icon name="bi:credit-card" class="text-4xl text-indigo-500 mb-4" />
+          <h3 class="text-xl font-semibold">Author Website Creation</h3>
+          <p>We give you an Online Presence!</p>
         </div>
       </div>
     </div>

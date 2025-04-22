@@ -1,7 +1,7 @@
 <template>
   <section
     class="bg-cover bg-center bg-no-repeat py-20 relative overflow-hidden"
-    style="background-image: url('/hero-img.png')"
+    style="background-image: url('/hero-image.png');"
   >
     <!-- Dark Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-50"></div>
@@ -19,19 +19,18 @@
           style="transform: translateY(0); transition: transform 0.8s ease-out"
         >
           <!-- Mobile & Computer Repair Service -->
-          Authorized Service Center for Huawei, Realme, Redmi, Tecno, Infinix, Itel, Samsung &
-          iPhone Repairs
+          Get your Book Published by us today!
         </h1>
         <p
           class="text-lg md:text-xl mb-6 transform"
           style="transform: translateY(0); transition: transform 0.8s ease-out"
         >
-        We offer expert repairs, servicing, original spare parts, and sales of phones and accessories.
+        As a premier ghostwriting and publishing company, we offer a wide range of services to help you bring your book to life. From ghostwriting and editing to cover design and distribution, we have the expertise and experience to make your book a success.
           <!-- Fast and reliable repair service for all your gadgets. -->
         </p>
         <div class="space-x-2 grid grid-cols-1 gap-2 lg:grid-cols-5">
           <a href="#callback-form"
-            class="bg-green-400 text-white font-extrabold px-3 py-3 rounded-lg P hover:bg-green-500 transition-all lg:col-span-2 z-40"
+            class="bg-indigo-900 text-white font-extrabold px-3 py-3 rounded-lg P hover:bg-blue-500 transition-all lg:col-span-2 z-40"
           >
             Book Appointment
           </a>
