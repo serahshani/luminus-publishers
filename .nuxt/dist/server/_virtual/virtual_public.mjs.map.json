@@ -1,0 +1,1 @@
+{"file":"virtual_public.mjs","mappings":";AAAuD,MAAe,aAAA,gBAAgB,oBAAoB;","names":[],"sources":["../../../../virtual:public?%2Fcallback-form.png"],"sourcesContent":["import { publicAssetsURL } from '#internal/nuxt/paths';export default publicAssetsURL(\"/callback-form.png\")"],"version":3}
