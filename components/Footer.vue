@@ -24,8 +24,8 @@ const subscribeNewsLetter = async () => {
   } finally {
     loading.value = false;
   }
-};
-</script>
+
+};</script>
 <template>
   <footer class="bg-gray-900 text-white py-8">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -75,6 +75,7 @@ const subscribeNewsLetter = async () => {
 <style scoped>
 /* Ensure no overflow occurs */
 footer {
-  @apply overflow-x-hidden;
+
+  overflow-x: hidden;
 }
 </style>
