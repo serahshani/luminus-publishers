@@ -119,8 +119,11 @@
       "#tailwind-config": [
         "./tailwind/expose"
       ],
+      "#tailwind-config/*": [
+        "./tailwind/expose/*"
+      ],
       "#app-manifest": [
-        "./manifest/meta/3a6f28bd-f7db-44a4-bb47-c785e6c0ee8b.json"
+        "./manifest/meta/dev"
       ],
       "#sanity-client": [
         "../node_modules/@sanity/client/dist/index"

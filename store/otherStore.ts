@@ -10,15 +10,24 @@ interface OtherStoreActions {
   someAction: () => void;
 }
 
-export const useOtherStore = defineStore<'other', OtherStoreState, {}, OtherStoreActions>('other', () => {
-  const someData = ref<string>('Data from the other store');
 
-  const someAction = () => {
-    console.log('Action from the other store was called');
-  };
 
-  return {
-    someData,
-    someAction
-  };
+
+
+
+
+
+
+
+
+
+export const useOtherStore = defineStore('other', {
+  state: (): OtherStoreState => ({
+    someData: 'Data from the other store'
+  }),
+  actions: {
+    someAction() {
+      console.log('Action from the other store was called');
+    }
+  }
 });
